@@ -11,8 +11,39 @@
     <label for="audioFile">Upload MP3/WAV file:</label>
     <input type="file" id="audioFile" name="audioFile" accept=".mp3,.wav" required><br><br>
 
-    <label for="semitones">Transpose by semitones:</label>
-    <input type="number" id="semitones" name="semitones" required><br><br>
+    <label for="targetKey">Target Key:</label>
+    <select id="targetKey" name="targetKey" required>
+      <!-- Major keys -->
+      <optgroup label="Major Keys">
+        <option value="c major">C Major</option>
+        <option value="c# major">C# Major</option>
+        <option value="d major">D Major</option>
+        <option value="d# major">D# Major</option>
+        <option value="e major">E Major</option>
+        <option value="f major">F Major</option>
+        <option value="f# major">F# Major</option>
+        <option value="g major">G Major</option>
+        <option value="g# major">G# Major</option>
+        <option value="a major">A Major</option>
+        <option value="a# major">A# Major</option>
+        <option value="b major">B Major</option>
+      </optgroup>
+      <!-- Minor keys -->
+      <optgroup label="Minor Keys">
+        <option value="c minor">C Minor</option>
+        <option value="c# minor">C# Minor</option>
+        <option value="d minor">D Minor</option>
+        <option value="d# minor">D# Minor</option>
+        <option value="e minor">E Minor</option>
+        <option value="f minor">F Minor</option>
+        <option value="f# minor">F# Minor</option>
+        <option value="g minor">G Minor</option>
+        <option value="g# minor">G# Minor</option>
+        <option value="a minor">A Minor</option>
+        <option value="a# minor">A# Minor</option>
+        <option value="b minor">B Minor</option>
+      </optgroup>
+    </select><br><br>
 
     <button type="submit">Transpose</button>
   </form>
